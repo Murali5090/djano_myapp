@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Page</title>
+    <!-- Include your CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Task Page</h1>
+        <p>This is a simple example of a Django template with dynamic data:</p>
+        
+        <!-- Display dynamic data -->
+        <p>Dynamic Data: {{ task_data }}</p>
+        
+        <p>You can replace this data with real dynamic content from your view.</p>
+        
+        <a href="#">Sample Link</a>
+        
+        <form>
+            <label for="inputText">Input Text:</label>
+            <input type="text" id="inputText" name="inputText">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
